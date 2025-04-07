@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name" translatable="true">VilvaKart</string>
+    <string name="bus_booking">Bus Booking</string>
+    <string name="shopping">Shopping</string>
+    <string name="for_bookings">For Bookings</string>
+    <string name="_91_0987654321">+91 0987654321</string>
+    <string name="tambaram">Tambaram\n</string>
+    <string name="thanjavur">Thanjavur</string>
+    <string name="tambaram1">Tambaram</string>
+    <string name="_19_oct_2024_friday">19 oct, (friday)</string>
+    <string name="img1">img1</string>
+    <string name="image_4">Image 4</string>
+    <string name="book_rtc_buses_by_vilvakart">Book RTC Buses by VilvaKart</string>
+    <string name="special_offer">Special offer</string>
+    <string name="vilvakart_is_india_s_leading_online_bus_ticket_booking_service_provider_check_out_budget_friendly_offers_and_save_big_with_discount_coupons_to_book_bus_tickets_at_the_lowest_price_with_us">VilvaKart is India`s leading online bus ticket booking service provider. Check out budget-friendly offers and save big with discount coupons to book bus tickets at the lowest price with us.</string>
+    <string name="mobile">Mobile</string>
+    <string name="continue_with_email">Continue With Email</string>
+    <string name="i_m_not_robot">I\'m Not Robot   </string>
+
+    <string name="sign_in">Sign in</string>
+    <string name="continue_with_mobile">continue_with_mobile</string>
+    <string name="email">Email</string>
+    <string name="vilvabusiness_gmail_com">vilvabusiness@gmail.com</string>
+    <string name="continu_with_mobile">continu with mobile</string>
+    <string name="access_location">Access Location</string>
+    <string name="or_countinue_with">or countinue with</string>
+    <string name="_1_2k">(1.2k)</string>
+    <string name="ac_seater_sleeper_2_1">AC Seater Sleeper (2 +1)</string>
+    <string name="_12">12</string>
+    <string name="seats_available">SEATS AVAILABLE</string>
+    <string name="from">from</string>
+    <string name="_500">500</string>
+    <string name="todo">TODO</string>
+    <string name="_5hrs">(5Hrs)</string>
+    <string name="live_tracking">Live Tracking|</string>
+    <string name="vilva_verified">Vilva Verified</string>
+    <string name="view_more">View More</string>
+    <string name="proceed">Proceed</string>
+    <string name="_0">0\n</string>
+    <string name="order_now">Order Now</string>
+    <string name="coming_soon">COMING SOON!</string>
+    <string name="add">Add</string>
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string name="strikethrough_price"><s>₹500</s></string>
+    <string name="_22">22</string>
+
+</resources>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/vcart" />
+
+        <!-- Phone Number Section -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/enterotp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="center"
+
+
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/inputotp1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:background="@drawable/background_mobile_otp"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:hint="@string/_0"
+                    android:maxLength="1"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+
+                    />
+
+                <EditText
+                    android:id="@+id/inputotp2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_mobile_otp"
+                    android:gravity="center"
+                    android:hint="@string/_0"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:layout_marginStart="3dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/inputotp3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/_0"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/background_mobile_otp"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+
+                    />
+
+                <EditText
+                    android:id="@+id/inputotp4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/_0"
+                    android:background="@drawable/background_mobile_otp"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:layout_marginStart="6dp"
+                    android:maxLength="1"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+
+                    />
+
+                <EditText
+                    android:id="@+id/inputotp5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/_0"
+                    android:background="@drawable/background_mobile_otp"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:layout_marginStart="3dp"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+
+                    />
+
+                <EditText
+                    android:id="@+id/inputotp6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/_0"
+                    android:background="@drawable/background_mobile_otp"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:layout_marginStart="3dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/verifyotp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/enterotp"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:id="@+id/sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/linear"
+                    android:background="@drawable/button_background"
+                    />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/or_countinue_with"
+                        android:textSize="12sp"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:textColor="@android:color/black" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/darker_gray" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_continue_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="70dp"
+                android:paddingEnd="80dp"
+                android:background="@drawable/custom_email_edittext"
+                app:layout_constraintTop_toBottomOf="@+id/verifyotp"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:text="@string/continu_with_mobile" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+
+            android:layout_centerHorizontal="true"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

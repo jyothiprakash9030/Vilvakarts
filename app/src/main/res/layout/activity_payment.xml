@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+  >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:orientation="vertical"
+       >
+
+        <!-- Trip Details -->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:padding="8dp"
+            android:background="#E2FCE3">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:contentDescription="Back Arrow"
+                android:layout_gravity="center"
+                app:tint="#000000" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/bus_seating_from_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="Chennai"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_arrow_right_alt_24"/>
+
+                        <TextView
+                            android:id="@+id/bus_seatingtoadress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Banglore"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+<!--                <TextView-->
+<!--                    android:id="@+id/totalamounts"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="-25dp"-->
+<!--                    android:layout_gravity="end"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text="amount"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    tools:ignore="HardcodedText" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bus_seatingvisibledate"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="Mon, 18 Oct 2024"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bus_name"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="end"
+                        android:layout_marginEnd="10dp"
+
+
+                        android:text="BusDetails"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="#FFFAFA"
+            tools:ignore="ExtraText">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    app:cardCornerRadius="8dp">
+
+
+
+        <!-- Payment Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+
+            android:layout_marginTop="12dp"
+          >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+
+
+    >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Details"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/Base_Ticket_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Ticket Amount: "
+        android:textSize="14sp" />
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="GST Amount: "
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="₹50"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="150% Refund on Bus Cancellation.\n Upto 100% Refund for Plan Changes \nDelays"
+
+        android:textSize="12sp" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                 android:gravity="end"
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Fare"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/with_GST_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                    android:layout_marginTop="16dp"
+                    android:text="₹500"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹45 Offer"
+                 android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#DEFFE6"
+                    android:textColor="#007B1D"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(including GST &amp;\n other Taxes)"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_marginTop="12dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                app:cardCornerRadius="8dp">
+
+
+
+        <!-- Payment Options -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+       >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPI App"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- PhonePe Option -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <RadioButton
+                        android:id="@+id/radioPhonePe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="8dp"-->
+<!--                        android:src="@drawable/phone_new_"/>-->
+                </LinearLayout>
+
+                <!-- Razorpay Option -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <RadioButton
+                        android:id="@+id/radioRazorpay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                   android:src="@drawable/rayorpay"
+                       />
+                </LinearLayout>
+
+                <!-- Swift Pay Option -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <RadioButton
+                        android:id="@+id/radioSwiftPay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="8dp"-->
+<!--                        android:src="@drawable/swiftpay_new"/>-->
+                </LinearLayout>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                app:cardCornerRadius="8dp">
+
+
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:elevation="4dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credit/Debit/ATM Card"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/upi_id_bg"
+            android:drawableStart="@drawable/plus_symbol"
+            android:hint="Enter New UPI ID"
+            android:padding="10dp"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(Visa, Mastercard, Rupay, etc)"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        <!-- Other Payment Options -->
+
+
+//////////////////////////////////////////////
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                app:cardCornerRadius="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+             android:background="#FFFFFF"
+                    android:padding="12dp"
+                    android:layout_marginTop="12dp"
+                    android:elevation="4dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wallet"
+
+                        android:fontFamily="@font/neue_haas_unica_pro_regular"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vilva Wallet"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+
+
+
+                            />
+
+
+                    </RadioGroup>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+ ////////////////////////////////////////
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!-- Assured Payment Label -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/hundered_percentage_assurance" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:text="100% Assured Payment"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Payment Options -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/visa_img" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/mastercard" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/paytm" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/razor_pay" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/pay_payal" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/skrill" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bus_seating_view_to_droping_bg"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/passenger_count"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="0 Passenger  | "
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+
+            android:paddingStart="2dp"
+            />
+        <TextView
+            android:id="@+id/Total_Amount_Paid"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="₹500"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+
+            android:paddingStart="5dp"
+
+            />
+        <Button
+            android:id="@+id/proceed_button_Success"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+
+            android:layout_alignParentBottom="true"
+
+            android:background="@drawable/all_button_color_bg"
+            android:textAllCaps="false"
+            android:text="Proceed"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

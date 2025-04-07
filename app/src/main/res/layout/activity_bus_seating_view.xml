@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAFA"
+    android:fitsSystemWindows="true">
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFAFA"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#F8EEDB">
+
+            <ImageView
+                android:id="@+id/bus_seating_backarrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:contentDescription="Back Arrow"
+                android:layout_gravity="center"
+                app:tint="#000000" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/from_bus_seating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="Chennai"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_arrow_right_alt_24"/>
+
+                        <TextView
+                            android:id="@+id/to_bus_seating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Banglore"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bus_seatingvisibledate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="Mon, 18 Oct 2024"
+                        android:textStyle="bold"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/travelsName"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="20dp"
+                        android:text="BusDetails"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <!-- Step 1: Seat Selection -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/icon_seat_selection"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/bus_innline_img"
+                    android:background="@drawable/step_circle_active" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seat Selection"
+                    android:textSize="12sp"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <!-- Line connecting Step 1 and Step 2 -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="0.5"
+                android:background="@color/gray" />
+
+            <!-- Step 2: Boarding Point -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/icon_boarding_point"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+
+                    android:background="@drawable/step_circle_inactive" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boarding Point"
+                    android:textSize="11sp"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <!-- Line connecting Step 2 and Step 3 -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="0.5"
+                android:background="@color/gray" />
+
+            <!-- Step 3: Dropping Point -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/icon_dropping_point"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+
+                    android:background="@drawable/step_circle_inactive" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dropping Point"
+                    android:textSize="11sp"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Berth Type Label -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="28dp"
+                android:text="Berth Type"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Lower Button -->
+            <Button
+                android:id="@+id/lowerDeckButton"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_lower_active"
+                android:drawableStart="@drawable/downarrow_lower_new"
+                android:paddingStart="5dp"
+                android:text="Lower"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
+
+            <!-- Upper Button -->
+            <Button
+                android:id="@+id/upperDeckButton"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_inactive"
+                android:drawableStart="@drawable/up_arrow_new"
+                android:text="Upper"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <!-- Info Button -->
+            <Button
+                android:id="@+id/btn_info"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/btn_inactive"
+                android:drawableTop="@drawable/info"
+                android:text="info"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+          android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:elevation="2dp"
+android:background="@drawable/seat_layout_bg"
+            android:layout_marginEnd="20dp"
+            android:padding="16dp">
+
+            <TextView
+
+                android:id="@+id/deckLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:layout_marginTop="18dp"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/driverImage"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/imagedriver"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:layout_gravity="end"
+                android:padding="8dp"/>
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progressBar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:visibility="gone"/>-->
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/seatRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bus_seating_view_to_droping_bg"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+android:visibility="invisible"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/passenger_count"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="0  seat selected | "
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+
+            android:paddingStart="2dp"
+            />
+
+        <TextView
+            android:id="@+id/TotalAmount"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:text="₹500"
+
+            android:textColor="#FFFFFF"
+
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/proceedButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+
+            android:layout_alignParentBottom="true"
+
+            android:background="@drawable/all_button_color_bg"
+            android:textAllCaps="false"
+            android:text="Proceed"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

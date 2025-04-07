@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="linear">#CC2026</color>
+    <color name="red">#D70419</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="otpboarder">#DEDDDD</color>
+    <color name="green">#007B1D</color>
+    <color name="seatbackground">#FBFAFA</color>
+    <color name="gray1">#808080</color>
+    <color name="black1">#000000</color>
+    <color name="green1">#4CAF50</color>
+    <color name="dark_green">#388E3C</color>
+    <color name="light_gray">#E0E0E0</color>
+    <color name="grey_label">#808080</color>
+
+</resources>

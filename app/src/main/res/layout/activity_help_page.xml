@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Logo -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            app:cardElevation="8dp"
+
+            android:outlineSpotShadowColor="#B10000"
+
+            >
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="23dp"
+
+
+
+                android:layout_gravity="center"
+                android:src="@drawable/vcart" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Contact Information -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="16dp">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/call_ico"
+        android:text=" Mobile Help"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" +91 0987654321"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp" />
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/message"
+                    android:text=" Email Help "
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="example@vilva.com"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="16sp" />
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/message"
+                    android:text=" Website Help  "
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" www.vilvabusiness.com"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FAQ Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAQ About Vilvakart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ListView
+                    android:id="@+id/faq_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"
+                    android:nestedScrollingEnabled="true"/>
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/footer_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="4">
+
+        <!-- Home -->
+        <LinearLayout
+            android:id="@+id/home"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/home_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+
+                android:src="@drawable/home_icon" />
+            <TextView
+                android:id="@+id/home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <!-- Bookings -->
+        <LinearLayout
+            android:id="@+id/Booking"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/booking_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/booking" />
+            <TextView
+                android:id="@+id/booking_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bookings"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Help -->
+        <LinearLayout
+            android:id="@+id/help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/help_red_color" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Account -->
+        <LinearLayout
+            android:id="@+id/account"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+android:id="@+id/account_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/account" />
+            <TextView
+                android:id="@+id/account_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

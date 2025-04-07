@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFAFA">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:background="#F8FDFF"
+
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:cardElevation="8dp"
+        android:outlineSpotShadowColor="#B10000"
+
+        >
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="23dp"
+
+
+
+            android:layout_gravity="center"
+            android:src="@drawable/vcart" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+android:background="@drawable/customised_mobile_otp_bg"
+
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:padding="16dp">
+
+        <!-- App Logo -->
+
+
+
+        <!-- Phone Number Section -->
+        <TextView
+            android:layout_marginTop="56dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile"
+
+            android:textStyle="bold"
+
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/all_edit_text_top_bg"
+            android:clipToPadding="false"
+            android:gravity="center"
+
+            android:paddingBottom="2dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="2dp"
+
+            />
+
+        <!-- Generate OTP Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:background="@drawable/source_destination_background"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone"
+                android:layout_marginStart="11dp"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 "
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/et_phone_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Phone Number"
+                android:inputType="phone"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_generate_otp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+
+
+            android:background="@drawable/container_frame23"
+            android:text="Generate OTP"
+
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <!-- Connect with Email -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or_countinue_with"
+                android:textSize="12sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColor="@android:color/black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray" />
+
+        </LinearLayout>
+        <!-- Captcha Check -->
+        <Button
+            android:id="@+id/btn_continue_email"
+      android:onClick="gotoemail"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/source_destination_background"
+              android:drawableStart="@drawable/baseline_email_24" android:paddingStart="81dp"
+            android:textSize="14dp"
+            android:paddingRight="40dp"
+
+            android:text="@string/continue_with_email"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_edittext_background">
+
+            <CheckBox
+                android:id="@+id/cb_robot_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8.5dp"
+
+
+
+
+                android:text="@string/i_m_not_robot"
+                tools:ignore="TouchTargetSizeCheck" />
+            <ImageView
+
+                android:id="@+id/recaptcha_icon"
+                android:layout_width="25dp"
+
+                android:layout_height="24dp"
+
+android:layout_marginStart="60dp"
+                android:src="@drawable/recaptcha_icon"
+                tools:ignore="ChildInNonViewGroup" />
+
+        </LinearLayout>
+    </LinearLayout>
+        <!-- Footer Terms -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+
+            android:text="By logging into agree with Terms and Conditions &amp; Policy"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

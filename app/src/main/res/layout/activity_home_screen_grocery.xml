@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer_nav_bar"
+        tools:context=".SourceAndDestination"
+        android:background="#F8FDFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:padding="16dp"
+            tools:ignore="MissingConstraints">
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/container_frame6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginTop="10dp"
+android:background="@drawable/busbookingbackground_grocery_bg"
+        android:layout_gravity="top|center_horizontal"
+
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:id="@+id/container_frame7"
+            android:layout_width="140dp"
+            android:layout_height="36dp"
+            android:background="@drawable/busbookingbackground_grocery_bg"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:onClick="skipnowgrocery"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingTop="6dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="6dp"
+            tools:ignore="TouchTargetSizeCheck">
+
+            <ImageView
+                android:id="@+id/image_frame3"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/baseline_directions_bus_2" />
+
+            <TextView
+                android:id="@+id/text_bus_booking"
+
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Bus Booking"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="RtlHardcoded,TextSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_frame8"
+            android:layout_width="140dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="8dp"
+
+            android:background="@drawable/shopping_button_bg"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:onClick="gotosource"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            tools:ignore="TouchTargetSizeCheck">
+
+            <ImageView
+                android:id="@+id/image_frame4"
+                android:layout_width="14dp"
+                android:layout_height="16dp"
+
+                android:scaleType="centerInside"
+                android:src="@drawable/shopping_button_home" />
+
+            <TextView
+                android:id="@+id/text_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+
+
+                android:singleLine="true"
+                android:text="Shopping"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+        <androidx.cardview.widget.CardView
+
+
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            cardView:cardCornerRadius="8dp"
+            cardView:cardElevation="4dp">
+
+            <LinearLayout
+
+                android:layout_width="340dp"
+                android:layout_height="162dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                android:padding="8dp">
+
+                <!-- Delivery Address Section -->
+                <LinearLayout
+                    android:layout_width="313dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/homescreen_location_bg"
+
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/home_screen_location__img"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delivered to"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:layout_marginStart="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ambattur, Chennai - 600001"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginStart="4dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- Search Bar -->
+                <LinearLayout
+                    android:layout_width="313dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/searchproduct_bg"
+                    android:elevation="4dp"
+                    android:padding="8dp"
+                    android:gravity="center_vertical"
+                    android:shape="rectangle">
+
+                    <EditText
+                        android:id="@+id/action_search"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:background="@android:color/transparent"
+                        android:hint="Search Products"
+                        android:padding="4dp"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <ImageView
+                        android:id="@+id/search_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/baseline_search_24"
+                         android:layout_marginEnd="15dp"
+                        android:contentDescription="Search Icon" />
+                </LinearLayout>
+
+                <!-- Categories Section -->
+
+
+                <LinearLayout
+                    android:layout_width="313dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Left Arrow Button -->
+                    <ImageButton
+                        android:id="@+id/btnLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+
+                        android:src="@drawable/baseline_keyboard_double_arrow_left_24"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <!-- Horizontal ScrollView -->
+                    <HorizontalScrollView
+                        android:id="@+id/horizontalScrollView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!-- Distinct TextViews -->
+
+
+                            <!-- Add the remaining distinct TextViews (up to 15) here -->
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <!-- Right Arrow Button -->
+                    <ImageButton
+
+                        android:id="@+id/btnRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:src="@drawable/baseline_keyboard_double_arrow_right_24"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brands you May like"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="375dp"
+                android:layout_height="63dp"
+                android:background="#DDFFE1"
+                android:orientation="vertical"
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ComingSoon"
+                    android:textSize="14sp"
+                    android:textColor="#0CA73D"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="23dp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="375dp"
+                android:layout_height="63dp"
+                android:background="@color/white"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+
+
+                >
+                <LinearLayout
+                    android:layout_width="184dp"
+                    android:layout_height="63dp"
+                    android:background="#FFFDDD"
+
+
+
+
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ComingSoon"
+                        android:textSize="14sp"
+                        android:textColor="#E88543"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="23dp"
+
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="184dp"
+                    android:layout_height="63dp"
+                    android:background="#FFFDDD"
+
+                    android:layout_marginStart="8dp"
+
+
+
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ComingSoon"
+                        android:textSize="14sp"
+                        android:textColor="#E88543"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="23dp"
+
+
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cold Drinks/Juices"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:scrollbars="horizontal"
+                    android:orientation="horizontal" />
+
+
+            </LinearLayout>
+
+            <!-- Horizontal RecyclerView -->
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/footer_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="4">
+
+        <!-- Home -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_home_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <!-- Bookings -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_bookmark_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bookings"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Help -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_help_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Account -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_account_box_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="8dp"
+    android:elevation="2dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+        tools:ignore="ExtraText,UselessParent">
+
+        <TextView
+
+            android:id="@+id/seatNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+
+            android:gravity="center"
+            android:text="Name"
+            android:layout_marginBottom="-4dp"
+            android:textColor="#128716"
+            android:textSize="16sp"
+
+
+
+            tools:ignore="HardcodedText,SmallSp,TextSizeCheck" />
+
+
+
+
+
+
+
+
+
+        <TextView
+
+            android:id="@+id/name"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="@drawable/edittexttop_bg"
+            android:gravity="center"
+            android:text="Name"
+            android:layout_marginBottom="-4dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+
+
+
+            tools:ignore="HardcodedText,SmallSp,TextSizeCheck" />
+
+        <!-- EditText field below the label -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/neue_haas_unica_pro_regular"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_edittext_background"
+
+            android:hint="Enter your Name"
+            android:inputType="textEmailAddress"
+            tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:layout_marginTop="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!-- Label above the EditText -->
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginBottom="-4dp"
+                android:fontFamily="@font/neue_haas_unica_pro_regular"
+                android:background="@drawable/edittexttop_bg"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText,SmallSp" />
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/passenger_edittext_bg"
+                android:gravity="center"
+                android:hint=""
+                android:inputType="number"
+
+                tools:ignore="Autofill,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center"
+
+
+            >
+
+            <!-- Label above the EditText -->
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="-4dp"
+                android:background="@drawable/edittexttop_bg"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Gender"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,SmallSp,TextSizeCheck" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/passenger_edittext_bg"
+                >
+
+                <Spinner
+
+                    android:id="@+id/spinnerGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:entries="@array/gender_options"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+        <TextView
+
+            android:id="@+id/emailLabel"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittexttop_bg"
+            android:gravity="center"
+            android:text="Email"
+            android:layout_marginBottom="-4dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+
+
+
+            tools:ignore="HardcodedText,SmallSp,TextSizeCheck" />
+
+        <!-- EditText field below the label -->
+        <EditText
+            android:id="@+id/passenger_Email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/neue_haas_unica_pro_regular"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_edittext_background"
+
+            android:hint="Enter your Email"
+            android:inputType="textEmailAddress"
+            tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize" />
+
+        <TextView
+
+            android:id="@+id/whatsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittexttop_bg"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:layout_marginEnd="30dp"
+            android:text="Whatsapp"
+            android:textColor="#000000"
+            android:layout_marginBottom="-4dp"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,SmallSp,TextSizeCheck" />
+
+        <!-- EditText field below the label -->
+        <EditText
+            android:id="@+id/passenger_whats"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_edittext_background"
+
+            android:hint="+91 9100850712"
+            android:inputType="number"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+
+
+
+        <RadioButton
+
+            android:id="@+id/checkbox_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:drawableEnd="@drawable/whatsapp"
+            android:drawablePadding="5dp"
+            android:text=" Primary Passenger ? Get Notifications via"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchResultActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/search_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F5F5F5"
+        android:padding="8dp"
+
+        android:elevation="4dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="Back"
+     />
+
+        <!-- Search Bar -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingHorizontal="8dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Search Products"
+                android:background="@null"
+                android:padding="0dp"
+                android:textColor="#000"
+                android:textColorHint="#888"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/searchIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_search_24"
+                android:contentDescription="Search"
+                />
+        </LinearLayout>
+
+        <!-- Cart Icon -->
+        <ImageView
+            android:id="@+id/cartIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+android:src="@drawable/result_search_cart"
+            android:contentDescription="Cart"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="319dp"
+        android:layout_height="52dp"
+        android:background="@drawable/search_screen_location_bg"
+         android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_location_pin_24"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivered to"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ambattur, Chennai - 600001"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+  android:layout_marginTop="10dp"
+
+
+    >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:background="@drawable/recycleview_ver_searchresult"
+            android:layout_marginStart="5dp"
+            android:id="@+id/productRecyclerView_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="3dp"
+        android:id="@+id/productRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+       />
+
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

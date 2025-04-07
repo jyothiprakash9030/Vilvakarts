@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6.8dp"
+        android:layout_marginTop="3.14dp"
+        android:layout_marginEnd="6.8dp"
+        android:layout_marginBottom="3.14dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/travelsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/neue_haas_unica_pro_medium"
+android:textStyle="bold"
+            android:paddingStart="10dp"
+            android:text="ABC TRAVELS"
+            android:textSize="15sp"
+          />
+
+        <LinearLayout
+            android:id="@+id/constraintlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+
+            android:layout_marginEnd="5dp"
+            android:background="@color/green"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:id="@+id/starimg"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+
+                android:layout_marginTop="2dp"
+                android:src="@drawable/baseline_star_24"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="4.0"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/starimg"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/likedViews"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:text="@string/_1_2k"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rating"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="6.8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="6.8dp"
+            android:layout_marginBottom="3.14dp"
+            android:background="@color/white"
+
+
+
+
+
+            >
+
+            <TextView
+                android:id="@+id/seatingDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:paddingStart="10dp"
+                android:text="@string/ac_seater_sleeper_2_1"
+                android:textSize="15sp"
+                android:fontFamily="@font/neue_haas_unica_pro_medium"
+
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/no_of_seat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+
+                android:paddingStart="10dp"
+                android:text="@string/_12"
+android:layout_marginTop="6dp"
+
+                android:textColor="@color/green"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/seatingDetails"
+                tools:ignore="MissingConstraints,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/seatAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="#E5F2E8"
+                android:paddingStart="3dp"
+                android:text="@string/seats_available"
+                android:textColor="@color/green"
+                android:fontFamily="@font/neue_haas_unica_pro_medium"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/no_of_seat"
+                app:layout_constraintTop_toBottomOf="@+id/seatingDetails"
+                tools:ignore="MissingConstraints,SmallSp" />
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+
+                android:layout_marginTop="6dp"
+                android:text="@string/from"
+                android:textSize="15dp"
+          app:layout_constraintEnd_toStartOf="@+id/Amount"
+                tools:ignore="MissingConstraints,TextSizeCheck"
+                tools:layout_editor_absoluteY="5dp" />
+
+
+            <TextView
+                android:id="@+id/Amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/_500"
+                android:textSize="16dp"
+                android:layout_gravity="end"
+
+                android:layout_marginEnd="5dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <ImageView
+                android:id="@+id/crossover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="180dp"
+
+                android:src="@drawable/cross_price"
+               android:padding="4px"
+                android:layout_marginTop="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_gravity="end"
+
+                android:layout_marginEnd="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/Amount"
+                tools:ignore="MissingConstraints" />
+
+
+            <ImageView
+                android:id="@+id/pickupsysmol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:contentDescription="@string/todo"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/vector"
+
+android:paddingStart="10px"
+                app:layout_constraintTop_toBottomOf="@+id/no_of_seat"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/pickuptiming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:text="11.00 PM"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/pickupsysmol"
+                app:layout_constraintTop_toBottomOf="@+id/no_of_seat" />
+
+            <ImageView
+                android:id="@+id/forwarddirections"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/black"
+                android:src="@drawable/group_26"
+                app:layout_constraintStart_toEndOf="@+id/pickuptiming"
+                app:layout_constraintTop_toBottomOf="@+id/no_of_seat" />
+
+            <ImageView
+                android:id="@+id/droping_point_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/frame"
+                app:layout_constraintStart_toEndOf="@+id/forwarddirections"
+                app:layout_constraintTop_toBottomOf="@+id/no_of_seat"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/dropingpoint_timing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:text="4.00 PM"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/droping_point_symbol"
+                app:layout_constraintTop_toBottomOf="@+id/no_of_seat" />
+
+            <TextView
+                android:id="@+id/hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/_5hrs"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/dropingpoint_timing"
+                app:layout_constraintTop_toBottomOf="@+id/no_of_seat" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#DBDBDB"
+                app:layout_constraintTop_toBottomOf="@+id/pickupsysmol"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="15dp" />
+
+            <TextView
+                android:id="@+id/livetracking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:paddingStart="10px"
+
+                android:text="@string/live_tracking"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/neue_haas_unica_pro_medium"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
+                tools:ignore="MissingConstraints"
+             />
+
+            <TextView
+                android:id="@+id/Vilvaverified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vilva_verified"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/neue_haas_unica_pro_medium"
+                app:layout_constraintStart_toEndOf="@+id/livetracking"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
+                tools:layout_editor_absoluteX="16dp" />
+
+
+            <!-- TextView with Underline -->
+
+            <!-- Line Below the TextView -->
+            <TextView
+                android:id="@+id/textview15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/view_more"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/red"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="@font/neue_haas_unica_pro_medium"
+                android:layout_gravity="end"
+
+                android:layout_marginEnd="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
+                tools:ignore="MissingConstraints" />
+
+            <!--            <View-->
+            <!--                android:layout_width="68dp"-->
+            <!--                android:layout_height="2dp"-->
+            <!--                tools:layout_editor_absoluteX="260dp"-->
+            <!--                android:background="@color/red"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textview15"-->
+            <!--                tools:ignore="MissingConstraints" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

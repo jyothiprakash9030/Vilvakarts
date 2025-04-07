@@ -1,0 +1,22 @@
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+android:color="#CA9393"> <!-- Light gray ripple (adjustable) -->
+<!-- Your original background as the mask/content -->
+<item>
+    <shape
+        android:shape="rectangle">
+        <stroke
+            android:width="2dp"
+
+            android:color="@color/white"/>
+        <corners android:radius="10dp"/>
+
+        <gradient
+            android:angle="135"
+            android:centerColor="@color/linear"
+            android:endColor="#F10008"
+            android:startColor="#F10008"
+            />
+    </shape>
+</item>
+</ripple>
